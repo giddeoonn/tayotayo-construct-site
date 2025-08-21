@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tayo Tayo Co. | Home</title>
     <link rel="icon" href="images/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="index.css" />
     <link
@@ -16,7 +17,7 @@
     <!-- NAVBAR STARTS HERE -->
     <!-- DESKTOP -->
     <nav id="desktop-nav">
-      <div class="container">
+      <div class="container" data-aos="fade" data-aos-duration="800">
         <div class="logo"><img src="images/logo.png" alt="logo" /></div>
         <ul class="nav-links">
           <li><a href="#">Home</a></li>
@@ -38,7 +39,7 @@
     </div>
     <!-- MOBILE -->
     <nav id="mobile-nav">
-      <div class="container">
+      <div class="container" data-aos="fade" data-aos-duration="800">
         <div class="logo"><img src="images/logo.png" alt="logo" /></div>
         <div class="ham-menu"><i class="fas fa-bars"></i></div>
         <div class="close-btn"><i class="fas fa-bars"></i></div>
@@ -47,27 +48,53 @@
     <!-- NAVBAR ENDS HERE -->
 
     <!-- HERO / BANNER STARTS HERE -->
-    <header class="hero">
+    <header class="hero" data-aos="fade" data-aos-duration="800">
       <div class="blur"></div>
       <div class="container">
         <div class="hero-text">
-          <h1>Welcome to <span>Tayo Tayo Co.</span></h1>
-          <p>From foundation to finish, we bring your vision to life.</p>
+          <h1 data-aos="fade-down" data-aos-duration="1000">
+            Welcome to
+            <span
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="800"
+              >Tayo Tayo Co.</span
+            >
+          </h1>
+          <p data-aos="fade" data-aos-duration="1200" data-aos-delay="600">
+            From foundation to finish, we bring your vision to life.
+          </p>
           <br />
-          <a href="#contact" class="hero-btn">Get a Free Quote</a>
+          <a
+            data-aos="fade-left"
+            data-aos-delay="1600"
+            href="#contact"
+            class="hero-btn"
+            >Get a Free Quote</a
+          >
         </div>
       </div>
     </header>
     <!-- HERO / BANNER ENDS HERE -->
 
     <!-- ABOUT SNAPSHOT STARTS HERE -->
-    <section id="about" class="about-home">
+    <section
+      id="about"
+      class="about-home"
+      data-aos="fade"
+      data-aos-duration="800"
+      data-aos-offset="200"
+    >
       <div class="container">
         <div class="about-left">
           <div>
-            <mark>About Us</mark>
-            <strong>Crafting Spaces That Last a Lifetime</strong>
-            <p>
+            <mark data-aos="fade" data-aos-duration="800" data-aos-delay="300"
+              >About Us</mark
+            >
+            <strong data-aos="fade-right" data-aos-duration="1000"
+              >Crafting Spaces That Last a Lifetime</strong
+            >
+            <p data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               A passion project where solid structures meet smart design. What
               started as a small idea among two builders quickly grew into
               <b>Tayo Tayo Corporation</b> is a construction brand built on
@@ -79,10 +106,17 @@
               turning visions into reality — one sturdy beam at a time.
             </p>
             <br />
-            <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="" data-aos="fade-up-left" data-aos-delay="300"
+              >Learn More <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
-        <div class="about-right">
+        <div
+          class="about-right"
+          data-aos="fade-left"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+        >
           <img src="images/aboutus.png" alt="" />
         </div>
       </div>
@@ -92,37 +126,42 @@
     <!-- SERVICES STARTS HERE-->
     <section id="services" class="services-home">
       <div class="blur"></div>
-      <div class="container">
-        <mark>Our Core Services</mark>
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-offset="300"
+      >
+        <mark> Our Core Services</mark>
         <strong>Little Things That Make Every Project Exceptional</strong>
 
         <div class="services-grid">
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
             <i class="fas fa-clipboard-list"></i><br />
             <p>Project Management & Consultation</p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
             <i class="fas fa-hard-hat"></i><br />
             <p>General Construction</p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="600">
             <i class="fas fa-tools"></i><br />
             <p>Renovation & Remodeling</p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
             <i class="fas fa-bolt"></i><br />
             <p>Electrical Installation & Maintenance</p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
             <i class="fas fa-faucet"></i><br />
             <p>Plumbing Services</p>
           </div>
 
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="700">
             <i class="fas fa-paint-roller"></i><br />
             <p>Interior & Exterior Finishing</p>
           </div>
@@ -134,11 +173,41 @@
     <!-- PROJECT PREVIEW STARTS HERE-->
     <section id="projects" class="projects-home">
       <div class="container">
-        <mark>Featured Projects</mark>
-        <strong>Turning Blueprints Into Reality</strong>
+        <div class="project-info">
+          <div class="project-left">
+            <mark data-aos="fade" data-aos-duration="800" data-aos-delay="300"
+              >Featured Projects</mark
+            >
+            <strong data-aos="fade-up" data-aos-duration="1000"
+              >Turning Blueprints Into Reality</strong
+            >
+          </div>
+          <div class="project-right">
+            <p
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-delay="600"
+            >
+              At Tayo Tayo Corporation, we believe quality construction should
+              be straightforward and within budget. From residential builds and
+              commercial fit-outs to full-scale infrastructure, our team
+              delivers safe, durable work—on time and on point.
+
+              <br /><br />
+              Whether you’re starting fresh or upgrading an existing space,
+              we’ll guide you from planning and permits to punch list and
+              handover. Explore our services and find the build solution that
+              fits your vision best.
+            </p>
+          </div>
+        </div>
 
         <div class="projects-grid">
-          <div class="project-card residential">
+          <div
+            class="project-card residential"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div class="project-img">
               <img
                 src="images/projects/apartment.png"
@@ -150,7 +219,11 @@
             </div>
           </div>
 
-          <div class="project-card infrastructure">
+          <div
+            class="project-card infrastructure"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             <div class="project-img">
               <img
                 src="images/projects/highway_overpass.png"
@@ -162,7 +235,11 @@
             </div>
           </div>
 
-          <div class="project-card residential">
+          <div
+            class="project-card residential"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
             <div class="project-img">
               <img
                 src="images/projects/office _complex.png"
@@ -177,6 +254,148 @@
       </div>
     </section>
     <!-- PROJECT PREVIEW ENDS HERE-->
+
+    <!-- WHY CHOOSE US STARTS HERE-->
+    <section id="why-choose-us" class="why-us">
+      <div class="container">
+        <mark data-aos="fade" data-aos-duration="800" data-aos-delay="300"
+          >Why Choose Us</mark
+        >
+        <strong data-aos="fade-up" data-aos-duration="1000"
+          >Proven Experience, Lasting Trust </strong
+        ><br />
+        <hr
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="800"
+        />
+        <ul class="reasons">
+          <li>
+            <div class="reason-card" data-aos="fade-up" data-aos-delay="800">
+              <i class="fas fa-hard-hat"></i>
+              <div>
+                <p class="name-reason-card"><b>Experienced & Reliable</b></p>
+                <p class="desc-reason-card">
+                  Proven track record of safe, durable builds.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="reason-card" data-aos="fade-up" data-aos-delay="800">
+              <i class="fas fa-tools"></i>
+              <div>
+                <p class="name-reason-card"><b>Quality Workmanship</b></p>
+                <p class="desc-reason-card">
+                  Skilled team using top-grade materials.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="reason-card" data-aos="fade-up" data-aos-delay="800">
+              <i class="fas fa-balance-scale"></i>
+              <div>
+                <p class="name-reason-card"><b>Transparent Pricing</b></p>
+                <p class="desc-reason-card">
+                  Clear costs, no hidden surprises.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="reason-card" data-aos="fade-up" data-aos-delay="800">
+              <i class="fas fa-clock"></i>
+              <div>
+                <p class="name-reason-card"><b>Timely Project Delivery</b></p>
+                <p class="desc-reason-card">
+                  We complete projects on schedule.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- WHY CHOOSE US ENDS HERE-->
+
+    <!-- CTA STRIP STARTS HERE-->
+    <section id="call-to-action">
+      <div class="blur"></div>
+      <div class="container">
+        <div class="cta-strip">
+          <strong data-aos="fade" data-aos-duration="800" data-aos-delay="300"
+            >Need Construction Services Today?</strong
+          >
+          <p data-aos="fade-up" data-aos-duration="1000">
+            Don’t wait until small problems become big ones! From repairs to
+            full-scale projects, We're ready to build for you.
+          </p>
+          <a
+            data-aos="fade"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            href="contact.html"
+            class="cta-btn"
+            >Inquire Now!</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- CTA STRIP ENDS HERE-->
+
+    <footer>
+      <div class="container">
+        <section class="footer-left">
+          <span class="footer_title">
+            <p><b>Tayo Tayo Co.</b></p>
+          </span>
+          <br />
+          <p class="footer-tagline">
+            Thanks for dropping by. Now go build your dreams, we’ll be here
+            turning blueprints into reality.
+          </p>
+          <br />
+          <div id="footer_socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </section>
+        <section class="footer-middle" id="quick-links">
+          <p class="quick-links_title"><b>Quick Links</b></p>
+          <hr />
+          <br />
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </section>
+        <section class="footer-right" id="logo">
+          <img src="images/logo.png" alt="" />
+        </section>
+      </div>
+    </footer>
+    <div class="footer">
+      <div class="container">
+        © Tayo Tayo Co. All rights reserved. | Design & Develop by GiDEON
+      </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
     <script src="script.js"></script>
   </body>
