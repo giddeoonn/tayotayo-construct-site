@@ -128,8 +128,11 @@ strong {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.242);
 }
 #call-to-action .blur {
+  position: absolute;
   top: 0;
   background-color: rgba(0, 0, 0, 0.29);
+  height: 100%;
+  width: 100%;
 }
 #call-to-action .container {
   text-align: center;

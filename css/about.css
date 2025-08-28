@@ -72,6 +72,14 @@
   background-size: cover;
   background-attachment: fixed;
 }
+/* #difference .blur {
+  background-color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+} */
 #difference .container {
   display: flex;
   flex-direction: column;
@@ -84,7 +92,7 @@
   justify-content: center;
 }
 .difference-title strong {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
   color: var(--white);
 }
 .difference-items {
